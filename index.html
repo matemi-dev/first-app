@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quali Consultora | Optimización de procesos para pymes</title>
+  <meta name="description" content="Quali Consultora: optimización de procesos, calidad y gestión de proyectos para pymes y organizaciones. Ciudad de Buenos Aires.">
+  <link rel="icon" type="image/png" href="img/logo-quali.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Encabezado ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="Quali Consultora - Inicio">
+        <img src="img/logo-quali.png" alt="Quali Consultora" width="160" height="51">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav__link">Sobre nosotros</a></li>
+          <li><a href="#metodo" class="nav__link">Cómo trabajamos</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Consultora para pymes y organizaciones</p>
+          <h1>Procesos más simples.<br>Resultados más claros.</h1>
+          <p class="hero__lead">
+            Ayudamos a pymes a ordenar su operación, mejorar la calidad y llevar
+            sus proyectos a buen puerto, con métodos probados y a la medida de cada empresa.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Agendá una charla</a>
+            <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+          </div>
+        </div>
+
+        <ul class="hero__stats" aria-label="Quali en números">
+          <li><strong>+40</strong><span>años de experiencia en dirección de proyectos</span></li>
+          <li><strong>PMP®</strong><span>metodología certificada</span></li>
+          <!-- EJEMPLO: reemplazar por un dato real -->
+          <li class="ejemplo"><strong>+50</strong><span>proyectos acompañados <em>[dato de ejemplo]</em></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Servicios ===== -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Servicios</p>
+          <h2>Lo que hacemos por tu empresa</h2>
+          <p>Tres líneas de trabajo que se combinan según lo que tu pyme necesita hoy.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h10M4 12h16M4 18h7"/><circle cx="18" cy="6" r="2"/><circle cx="15" cy="18" r="2"/></svg>
+            </div>
+            <h3>Mejora de procesos</h3>
+            <p>Relevamos cómo trabaja hoy tu empresa, detectamos cuellos de botella y rediseñamos los procesos para ganar tiempo y reducir costos.</p>
+            <ul class="card__list">
+              <li>Mapeo y diagnóstico de procesos</li>
+              <li>Metodología Kaizen y mejora continua</li>
+              <li>Indicadores y tableros de gestión</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Calidad</h3>
+            <p>Implementamos sistemas de gestión de calidad prácticos, que el equipo pueda sostener en el día a día y que se traduzcan en clientes más satisfechos.</p>
+            <ul class="card__list">
+              <li>Sistemas de gestión de calidad</li>
+              <li>Estandarización y documentación</li>
+              <li>Auditorías internas y acompañamiento</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M7 14h4M7 17h7"/></svg>
+            </div>
+            <h3>Gestión de proyectos</h3>
+            <p>Planificamos, organizamos y acompañamos tus proyectos con enfoques predictivos, ágiles o híbridos, para cumplir plazos y presupuesto.</p>
+            <ul class="card__list">
+              <li>Planificación estratégica</li>
+              <li>Implementación de PMO</li>
+              <li>Capacitación in-company y virtual</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre nosotros ===== -->
+    <section class="section section--tinted" id="nosotros">
+      <div class="container about">
+        <div class="about__text reveal">
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2>Experiencia de grandes proyectos, al servicio de las pymes</h2>
+          <p>
+            Quali nace de más de 40 años dirigiendo proyectos en industrias exigentes como
+            Oil &amp; Gas, minería, construcción, energías renovables y telecomunicaciones.
+          </p>
+          <p>
+            Hoy llevamos ese conocimiento a pymes y organizaciones: herramientas probadas,
+            adaptadas a la escala, los tiempos y el presupuesto de cada empresa.
+          </p>
+          <p class="about__clients">
+            <span>Trabajamos en proyectos para:</span>
+            YPF · PAE · Chevron Argentina · Siemens · Techint · Telefónica
+          </p>
+        </div>
+
+        <div class="team reveal">
+          <article class="team__member">
+            <div class="team__avatar" aria-hidden="true">MM</div>
+            <div>
+              <h3>Marcelo Missio</h3>
+              <p class="team__role">Fundador · Arquitecto, PMP®</p>
+              <p>Más de 40 años en dirección de proyectos, con fuerte trayectoria en Oil &amp; Gas.</p>
+            </div>
+          </article>
+          <article class="team__member">
+            <div class="team__avatar" aria-hidden="true">NM</div>
+            <div>
+              <h3>Nicole Martin</h3>
+              <p class="team__role">Comunicación y equipos</p>
+              <p>Gestión de equipos y vinculación con los actores de cada proyecto.</p>
+            </div>
+          </article>
+          <article class="team__member">
+            <div class="team__avatar" aria-hidden="true">MM</div>
+            <div>
+              <h3>Mateo Missio</h3>
+              <p class="team__role">Ejecución y herramientas digitales</p>
+              <p>Lic. en Sociología. Seguimiento de proyectos y herramientas digitales de gestión.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo trabajamos ===== -->
+    <section class="section" id="metodo">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Un proceso claro, de principio a fin</h2>
+          <p>Sin fórmulas enlatadas: cada etapa se ajusta a la realidad de tu empresa.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Diagnóstico</h3>
+            <p>Conocemos tu empresa, relevamos procesos y definimos juntos qué problemas atacar primero.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3>Propuesta</h3>
+            <p>Armamos un plan de trabajo con objetivos medibles, plazos y alcance claros.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3>Implementación</h3>
+            <p>Trabajamos codo a codo con tu equipo, capacitando para que los cambios se sostengan.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Seguimiento</h3>
+            <p>Medimos resultados con indicadores y ajustamos para asegurar la mejora continua.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section class="section section--dark" id="contacto">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="eyebrow eyebrow--light">Contacto</p>
+          <h2>Hablemos de tu próximo paso</h2>
+          <p>Contanos qué necesita tu empresa y te respondemos a la brevedad para coordinar una primera charla sin cargo.</p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__label">Email</span>
+              <a href="mailto:info@quali.com.ar">info@quali.com.ar</a>
+            </li>
+            <li>
+              <span class="contact__label">Teléfono</span>
+              <a href="tel:+5491153273841">11 5327 3841</a>
+            </li>
+            <li>
+              <span class="contact__label">Ubicación</span>
+              Ciudad de Buenos Aires, Argentina
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sin backend (GitHub Pages): el formulario arma un email en el cliente de correo del visitante -->
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+          <div class="form__row">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" autocomplete="organization">
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form__row">
+            <label for="mensaje">¿En qué te podemos ayudar?</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <p class="form__error" id="formError" role="alert" hidden></p>
+          <button type="submit" class="btn btn--primary btn--block">Enviar consulta</button>
+          <p class="form__note">Se abrirá tu programa de correo con el mensaje listo para enviar.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Quali Consultora · Ciudad de Buenos Aires, Argentina</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
