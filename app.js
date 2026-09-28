@@ -63,45 +63,6 @@
     document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
   }
 
-  // ---------- Formulario de contacto (mailto, sin backend) ----------
-  const form = document.getElementById("contactForm");
-  const errorBox = document.getElementById("formError");
-  const DESTINO = "info@quali.com.ar";
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const campos = {
-      nombre: form.nombre,
-      email: form.email,
-      mensaje: form.mensaje,
-    };
-    const invalidos = Object.values(campos).filter((input) => !input.checkValidity() || !input.value.trim());
-
-    Object.values(campos).forEach((input) => input.classList.toggle("is-invalid", invalidos.includes(input)));
-
-    if (invalidos.length) {
-      errorBox.textContent = "Por favor completá nombre, un email válido y tu mensaje.";
-      errorBox.hidden = false;
-      invalidos[0].focus();
-      return;
-    }
-    errorBox.hidden = true;
-
-    const empresa = form.empresa.value.trim();
-    const asunto = "Consulta web" + (empresa ? " - " + empresa : "");
-    const cuerpo =
-      "Nombre: " + campos.nombre.value.trim() + "\n" +
-      (empresa ? "Empresa: " + empresa + "\n" : "") +
-      "Email: " + campos.email.value.trim() + "\n\n" +
-      campos.mensaje.value.trim();
-
-    window.location.href =
-      "mailto:" + DESTINO +
-      "?subject=" + encodeURIComponent(asunto) +
-      "&body=" + encodeURIComponent(cuerpo);
-  });
-
   // ---------- Año del footer ----------
   document.getElementById("year").textContent = new Date().getFullYear();
 })();

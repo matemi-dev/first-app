@@ -222,28 +222,12 @@
           </ul>
         </div>
 
-        <!-- Sin backend (GitHub Pages): el formulario arma un email en el cliente de correo del visitante -->
-        <form class="form reveal" id="contactForm" novalidate>
-          <div class="form__row">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-          </div>
-          <div class="form__row">
-            <label for="empresa">Empresa</label>
-            <input type="text" id="empresa" name="empresa" autocomplete="organization">
-          </div>
-          <div class="form__row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-          </div>
-          <div class="form__row">
-            <label for="mensaje">¿En qué te podemos ayudar?</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-          </div>
-          <p class="form__error" id="formError" role="alert" hidden></p>
-          <button type="submit" class="btn btn--primary btn--block">Enviar consulta</button>
-          <p class="form__note">Se abrirá tu programa de correo con el mensaje listo para enviar.</p>
-        </form>
+        <div class="contact__card reveal">
+          <h3>¿Tenés un proyecto en mente?</h3>
+          <p>Escribinos contándonos brevemente sobre tu organización y lo que necesitás. Te respondemos a la brevedad.</p>
+          <a href="mailto:info@quali.com.ar?subject=Consulta%20desde%20la%20web" class="btn btn--primary btn--block">Escribinos a info@quali.com.ar</a>
+          <a href="tel:+5491153273841" class="btn btn--ghost btn--block">Llamanos al 11 5327 3841</a>
+        </div>
       </div>
     </section>
 

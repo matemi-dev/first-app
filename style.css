@@ -278,34 +278,19 @@ p { margin: 0 0 1em; }
 .contact__list a:hover { color: var(--orange); }
 .contact__label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #9fb0c8; }
 
-.form {
+.contact__card {
   background: var(--white);
   color: var(--text);
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: grid;
+  gap: 0.9rem;
 }
-.form__row { margin-bottom: 1.1rem; }
-.form label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.35rem; color: var(--blue-deep); }
-.form input, .form textarea {
-  width: 100%;
-  padding: 0.75rem 0.9rem;
-  font: inherit;
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: #fafbfd;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-.form textarea { resize: vertical; }
-.form input:focus, .form textarea:focus {
-  outline: none;
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(47, 85, 151, 0.15);
-}
-.form .is-invalid { border-color: #c62828; }
-.form__error { color: #c62828; font-size: 0.9rem; }
-.form__note { font-size: 0.8rem; color: var(--muted); text-align: center; margin: 0.75rem 0 0; }
+.contact__card h3 { margin: 0; }
+.contact__card p { margin: 0 0 0.5rem; color: var(--muted); }
+.contact__card .btn { text-align: center; overflow-wrap: anywhere; }
+
 
 /* ---------- Footer ---------- */
 .footer { background: #0f1e33; color: #9fb0c8; font-size: 0.9rem; padding-block: 1.5rem; }
@@ -353,5 +338,4 @@ p { margin: 0 0 1em; }
 
   .cards, .steps, .hero__stats { grid-template-columns: 1fr; }
   .hero__actions .btn { flex: 1 1 auto; text-align: center; }
-  .form { padding: 1.5rem; }
 }
